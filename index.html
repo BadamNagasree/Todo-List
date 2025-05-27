@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h2>📝 To-Dos App</h2>
+    
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Task" />
+      <input type="date" id="taskDate" />
+      <button onclick="addTask()" title="Add Task">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div> 
+    <ul id="taskList"></ul> 
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
